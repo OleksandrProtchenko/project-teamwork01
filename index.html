@@ -154,7 +154,91 @@
   </ul>
 </section>
 
-      
+      <section class="contacts">
+  <div class="container contact-container">
+    <div class="contact-caption">
+      <h3 class="contact-subtitle">Connect</h3>
+      <h2 class="contact-title">Order your unique jewelry</h2>
+      <p class="contact-descr">We'd love to hear more details from you!</p>
+    </div>
+    <div class="contact-content">
+      <address class="contact">
+        <ul class="contact-list">
+          <li class="contact-item">
+            <svg class="contact-icon" width="32" height="32">
+              <use href="../img/icons.svg#email"></use>
+            </svg>
+            <p class="contact-link-name">Email</p>
+            <a
+              class="contact-link"
+              href="mailto:info@handmadejewelry.com"
+              rel="nooper noreferer"
+              >info@handmadejewelry.com</a
+            >
+          </li>
+          <li class="contact-item">
+            <svg class="contact-icon" width="32" height="32">
+              <use href="../img/icons.svg#phone"></use>
+            </svg>
+            <p class="contact-link-name">Phone</p>
+            <a
+              class="contact-link"
+              href="tel:+15550000000"
+              rel="nooper noreferer"
+              >+1 (555) 000-0000</a
+            >
+          </li>
+          <li class="contact-item">
+            <svg class="contact-icon" width="32" height="32">
+              <use href="../img/icons.svg#location"></use>
+            </svg>
+            <p class="contact-link-name">Office</p>
+            <a
+              class="contact-link"
+              href="https://www.google.com/search?q=76-8+Oakington+Manor+Dr%2C+London%2C+UK&oq=76-8+Oakington+Manor+Dr%2C+London%2C+UK&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQABjvBTIKCAIQABiABBiiBDIHCAMQABjvBTIHCAQQABjvBdIBBzU2NmowajeoAgCwAgA&sourceid=chrome&ie=UTF-8"
+              target="_blank"
+              rel="nooper noreferer"
+              >76-8 Oakington Manor Dr, London, UK</a
+            >
+          </li>
+        </ul>
+      </address>
+      <form class="contact-form" name="reviewForm">
+        <div class="contact-form-field">
+          <label class="contact-form-label" for="user-name">Name*</label>
+          <input
+            pattern="^[a-zA-Z\s\.]{5,28}$"
+            type="text"
+            class="contact-form-input"
+            name="user-name"
+            placeholder="Tony"
+            minlength="3"
+          />
+          <label class="contact-form-label" for="phone">Phone*</label>
+          <input
+            pattern="^\+[0-9\s]{14}$"
+            type="tel"
+            class="contact-form-input"
+            name="phone"
+            placeholder="+12345678900"
+            minlength="8"
+          />
+          <label class="contact-form-label" for="user-comment"
+            >Describe what you want</label
+          >
+          <textarea
+            class="contact-form-comment"
+            name="user-comment"
+            placeholder="Type your message..."
+            maxlength="500"
+          ></textarea>
+        </div>
+        <button class="form-btn" type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+</section>
+
     </main>
 
     <footer class="footer" id="footer">
