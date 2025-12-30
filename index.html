@@ -24,7 +24,7 @@
     />
     <title>Handmade Jewelry</title>
     <script type="module" crossorigin src="/project-teamwork01/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/project-teamwork01/assets/index-i5eTvhfc.css">
+    <link rel="stylesheet" crossorigin href="/project-teamwork01/assets/index-JGoZH9s4.css">
   </head>
   <body>
     <header class="header">
@@ -539,33 +539,45 @@
       </address>
       <form class="contact-form" name="reviewForm">
         <div class="contact-form-field">
-          <label class="contact-form-label" for="user-name">Name*</label>
-          <input
-            pattern="^[a-zA-Z\s\.]{5,28}$"
-            type="text"
-            class="contact-form-input"
-            name="user-name"
-            placeholder="Tony"
-            minlength="3"
-          />
-          <label class="contact-form-label" for="phone">Phone*</label>
-          <input
-            pattern="^\+[0-9\s]{14}$"
-            type="tel"
-            class="contact-form-input"
-            name="phone"
-            placeholder="+12345678900"
-            minlength="8"
-          />
-          <label class="contact-form-label" for="user-comment"
-            >Describe what you want</label
-          >
-          <textarea
-            class="contact-form-comment"
-            name="user-comment"
-            placeholder="Type your message..."
-            maxlength="500"
-          ></textarea>
+          <div class="form-label-wrapper">
+            <label class="contact-form-label" for="user_name">Name*</label>
+            <input
+              pattern="^[a-zA-Z\s\.]{5,28}$"
+              name="user-name"
+              type="text"
+              class="contact-form-input"
+              id="user_name"
+              autocomplete="off"
+              placeholder="Tony"
+              minlength="3"
+            />
+          </div>
+          <div class="form-label-wrapper">
+            <label class="contact-form-label" for="phone">Phone*</label>
+            <input
+              pattern="^\+[0-9\s]{14}$"
+              type="tel"
+              class="contact-form-input"
+              id="phone"
+              autocomplete="off"
+              name="phone"
+              placeholder="+12345678900"
+              minlength="8"
+            />
+          </div>
+          <div class="form-label-wrapper">
+            <label class="contact-form-label" for="user_comment"
+              >Describe what you want</label
+            >
+            <textarea
+              class="contact-form-comment"
+              name="user-comment"
+              id="user_comment"
+              autocomplete="off"
+              placeholder="Type your message..."
+              maxlength="500"
+            ></textarea>
+          </div>
         </div>
         <button class="form-btn" type="submit">Submit</button>
       </form>
