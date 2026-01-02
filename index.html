@@ -24,36 +24,44 @@
     />
     <title>Handmade Jewelry</title>
     <script type="module" crossorigin src="/project-teamwork01/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/project-teamwork01/assets/index-CG1TbqIe.css">
+    <link rel="stylesheet" crossorigin href="/project-teamwork01/assets/index-Dd6lHKXE.css">
   </head>
   <body>
     <header class="header">
   <div class="container header-container">
-    <a href="../index.html" class="header-logo-link">
-      <svg width="160" height="68" class="header-logo-icon">
-        <use href="../img/icons.svg#logo"></use>
-      </svg>
+    <a href="#" class="header-logo-link" id="logo">
+      <img src="/project-teamwork01/assets/logo-CGth8Hea.svg" alt="header logo" class="header-logo-icon" />
     </a>
     <nav class="nav">
       <ul class="nav-list">
         <li class="nav-item">
-          <a class="nav-link" href="./about.html">About us</a>
+          <a class="nav-link text-decoration-transition" href="#about"
+            >About us</a
+          >
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="./benefits.html">Benefits</a>
+          <a class="nav-link text-decoration-transition" href="#benefits"
+            >Benefits</a
+          >
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="./gallery.html">Gallery</a>
+          <a class="nav-link text-decoration-transition" href="#gallery"
+            >Gallery</a
+          >
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="./testimonial.html">Testimonials</a>
+          <a class="nav-link text-decoration-transition" href="#testimonial"
+            >Testimonials</a
+          >
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="./contact.html">Contacts</a>
+          <a class="nav-link text-decoration-transition" href="#contact"
+            >Contacts</a
+          >
         </li>
       </ul>
     </nav>
-    <button class="nav-btn" type="button">Order Now</button>
+    <button class="btn nav-btn" type="button" id="headerBtn">Order Now</button>
     <button
       class="burger-btn"
       type="button"
@@ -62,32 +70,31 @@
       aria-expanded="false"
     >
       <svg width="24" height="24" class="burger-btn-svg">
-        <use href="../img/icons.svg#menu"></use>
+        <use href="/project-teamwork01/assets/icons-BvoaX1Rq.svg#menu"></use>
       </svg>
       <svg width="24" height="24" class="close-btn-svg">
-        <use href="../img/icons.svg#icon-close"></use>
+        <use href="/project-teamwork01/assets/icons-BvoaX1Rq.svg#icon-close"></use>
       </svg>
     </button>
   </div>
 </header>
 
 
-
     <main>
-        <section class="hero">
-        <div class="container hero-container">
-          <div class="hero-content">
-            <h1 class="hero-title">Discover the Art of Handmade Jewelry</h1>
-            <p class="hero-text">
-              Each piece of our jewelry tells a story, crafted with love and care.
-              Embrace the beauty of uniqueness and sustainability in every design.
-            </p>
-          </div>
-          <button class="hero-btn" type="button">Order Now</button>
-        </div>
-      </section>
+      <section class="hero" id="hero">
+  <div class="container hero-container">
+    <div class="hero-content">
+      <h1 class="hero-title">Discover the Art of Handmade Jewelry</h1>
+      <p class="hero-text">
+        Each piece of our jewelry tells a story, crafted with love and care.
+        Embrace the beauty of uniqueness and sustainability in every design.
+      </p>
+    </div>
+    <button class="btn hero-btn" type="button">Order Now</button>
+  </div>
+</section>
 
-      <section class="about">
+      <section class="about" id="about">
   <div class="container">
     <div class="about-wrapper">
       <picture>
@@ -135,9 +142,9 @@
         <h2 class="about-title">The Artistry Behind Handmade Jewelry</h2>
         <p class="about-text">
           Handmade Jewelry began as a passion project, inspired by the beauty of
-          nature and the desire to create meaningful pieces. Each item is crafted
-          with love, reflecting our commitment to sustainability and the unique
-          story of its maker.
+          nature and the desire to create meaningful pieces. Each item is
+          crafted with love, reflecting our commitment to sustainability and the
+          unique story of its maker.
         </p>
         <ul class="about-list">
           <li class="about-item">Inspired by Nature</li>
@@ -149,7 +156,7 @@
   </div>
 </section>
 
-      <section class="benefits">
+      <section class="benefits" id="benefits">
   <div class="container benefits-container">
     <h2 class="benefits-title">
       Discover the Artistry of Unique, Handmade Jewelry Crafted Just for You
@@ -183,11 +190,13 @@
 </section>
 
       <section class="gallery" id="gallery">
-  <div class="container">
-    <h2 class="gallery-title">Jewelry Showcase</h2>
-    <p class="gallery-descr">
-      Discover the beauty of our handcrafted jewelry in style.
-    </p>
+  <div class="container gallery-container">
+    <div class="gallery-content-wrapper">
+      <h2 class="gallery-title">Jewelry Showcase</h2>
+      <p class="gallery-descr">
+        Discover the beauty of our handcrafted jewelry in style.
+      </p>
+    </div>
     <ul class="gallery-list">
       <li class="gallery-list-item">
         <picture>
@@ -405,12 +414,14 @@
   </div>
 </section>
 
-      <section class="testimonials">
-  <div class="container">
-    <h2 class="testimonials-title">Customer testimonials</h2>
-    <p class="testimonials-description">
-      Absolutely love my new earrings! They are stunning.
-    </p>
+      <section class="testimonial" id="testimonial">
+  <div class="container testimonial-container">
+    <div class="testimonial-caption-wrapper">
+      <h2 class="testimonials-title">Customer testimonials</h2>
+      <p class="testimonials-descr">
+        Absolutely love my new earrings! They are stunning.
+      </p>
+    </div>
     <ul class="testimonials-list">
       <li class="testimonials-item">
         <picture>
@@ -440,12 +451,12 @@
             type="image/webp"
           />
           <source
-            srcset="../img/testimonials/mobile/1_mb_@1x.jpg 1x, ../img/testimonials/mobile/1_mb_@2x.jpg 2x"
+            srcset="/project-teamwork01/assets/1_mb_@1x-zEeCDmQO.jpg 1x, /project-teamwork01/assets/1_mb_@2x-CEhLXfHz.jpg 2x"
             type="image/jpg"
           />
           <img
             class="testimonials-image"
-            src="../img/testimonials/mobile/1_mb_@1x.jpg"
+            src="/project-teamwork01/assets/1_mb_@1x-zEeCDmQO.jpg"
             alt="Close-up of a smiling woman wearing a handmade drop earring"
           />
         </picture>
@@ -476,32 +487,36 @@
             type="image/webp"
           />
           <source
-            srcset="../img/testimonials/mobile/2_mb_@1x.jpg 1x, ../img/testimonials/mobile/2_mb_@2x.jpg 2x"
+            srcset="/project-teamwork01/assets/2_mb_@1x-flT9eF13.jpg 1x, /project-teamwork01/assets/2_mb_@2x-DMh2pyr_.jpg 2x"
             type="image/jpg"
           />
           <img
             class="testimonials-image"
-            src="../img/testimonials/mobile/2_mb_@1x.jpg"
-            alt="Close-up of a smiling woman wearing a handmade drop earring"
+            src="/project-teamwork01/assets/2_mb_@1x-flT9eF13.jpg"
+            alt="Man holding a handcrafted stone pendant necklace"
           />
         </picture>
         <div class="testimonials-content">
-          <div class="content-wrapper">
+          <div class="testimonial-content-wrapper">
             <span class="testimonials-rate">
               <svg class="testimonials-icon" width="24" height="24">
-                <use href="../img/icons.svg#star"></use>
+                <use href="/project-teamwork01/assets/icons-BvoaX1Rq.svg#star"></use>
               </svg>
               <svg class="testimonials-icon" width="24" height="24">
-                <use href="../img/icons.svg#star"></use>
+                <use href="/project-teamwork01/assets/icons-BvoaX1Rq.svg#star"></use>
               </svg>
               <svg class="testimonials-icon" width="24" height="24">
-                <use href="../img/icons.svg#star"></use>
+                <use href="/project-teamwork01/assets/icons-BvoaX1Rq.svg#star"></use>
               </svg>
               <svg class="testimonials-icon" width="24" height="24">
-                <use href="../img/icons.svg#star"></use>
+                <use href="/project-teamwork01/assets/icons-BvoaX1Rq.svg#star"></use>
               </svg>
-              <svg class="testimonials-icon" width="24" height="24">
-                <use href="../img/icons.svg#star"></use>
+              <svg
+                class="testimonials-icon start-outline"
+                width="24"
+                height="24"
+              >
+                <use href="/project-teamwork01/assets/icons-BvoaX1Rq.svg#star-outline"></use>
               </svg>
             </span>
             <blockquote class="testimonials-text">
@@ -513,22 +528,22 @@
       </li>
       <li class="testimonials-item">
         <div class="testimonials-content">
-          <div class="content-wrapper">
+          <div class="testimonial-content-wrapper">
             <span class="testimonials-rate">
               <svg class="testimonials-icon" width="24" height="24">
-                <use href="../img/icons.svg#star"></use>
+                <use href="/project-teamwork01/assets/icons-BvoaX1Rq.svg#star"></use>
               </svg>
               <svg class="testimonials-icon" width="24" height="24">
-                <use href="../img/icons.svg#star"></use>
+                <use href="/project-teamwork01/assets/icons-BvoaX1Rq.svg#star"></use>
               </svg>
               <svg class="testimonials-icon" width="24" height="24">
-                <use href="../img/icons.svg#star"></use>
+                <use href="/project-teamwork01/assets/icons-BvoaX1Rq.svg#star"></use>
               </svg>
               <svg class="testimonials-icon" width="24" height="24">
-                <use href="../img/icons.svg#star"></use>
+                <use href="/project-teamwork01/assets/icons-BvoaX1Rq.svg#star"></use>
               </svg>
               <svg class="testimonials-icon" width="24" height="24">
-                <use href="../img/icons.svg#star"></use>
+                <use href="/project-teamwork01/assets/icons-BvoaX1Rq.svg#star"></use>
               </svg>
             </span>
             <blockquote class="testimonials-text">
@@ -556,7 +571,7 @@
           />
           <source
             media="(min-width: 768px)"
-            srcset="../img/testimonials/tablet/3_tb_@1x.jpg 1x, ../img/testimonials/tablet/3_tb_@2x.jpg 2x"
+            srcset="/project-teamwork01/assets/3_tb_@1x-Dnh3USFe.jpg 1x, /project-teamwork01/assets/3_tb_@2x-BBz9rijQ.jpg 2x"
             type="image/jpg"
           />
 
@@ -565,7 +580,7 @@
             type="image/webp"
           />
           <source
-            srcset="../img/testimonials/mobile/3_mb_@1x.jpg 1x, ../img/testimonials/mobile/3_mb_@2x.jpg 2x"
+            srcset="/project-teamwork01/assets/3_mb_@1x-ZxUeUy-R.jpg 1x, /project-teamwork01/assets/3_mb_@2x-0QcFNrJA.jpg 2x"
             type="image/jpg"
           />
 
@@ -594,7 +609,7 @@
           />
           <source
             media="(min-width: 768px)"
-            srcset="../img/testimonials/tablet/4_tb_@1x.jpg 1x, ../img/testimonials/tablet/4_tb_@2x.jpg 2x"
+            srcset="/project-teamwork01/assets/4_tb_@1x-BEBQMlYL.jpg 1x, /project-teamwork01/assets/4_tb_@2x-BL-crWD8.jpg 2x"
             type="image/jpg"
           />
 
@@ -603,14 +618,14 @@
             type="image/webp"
           />
           <source
-            srcset="../img/testimonials/mobile/4_mb_@1x.jpg 1x, ../img/testimonials/mobile/4_mb_@2x.jpg 2x"
+            srcset="/project-teamwork01/assets/4_mb_@1x-D9ARlP6J.jpg 1x, /project-teamwork01/assets/4_mb_@2x-D_KSADJ0.jpg 2x"
             type="image/jpg"
           />
 
           <img
             class="testimonials-image"
-            src="../img/testimonials/mobile/4_mb_@1x.jpg"
-            alt="Description for photo 4"
+            src="/project-teamwork01/assets/4_mb_@1x-D9ARlP6J.jpg"
+            alt="Close-up of hands holding and displaying a silver gemstone ring"
           />
         </picture>
       </li>
@@ -618,7 +633,7 @@
   </div>
 </section>
 
-      <section class="contacts">
+      <section class="contacts" id="contact">
   <div class="container contact-container">
     <div class="contact-caption">
       <h3 class="contact-subtitle">Connect</h3>
@@ -630,7 +645,7 @@
         <ul class="contact-list">
           <li class="contact-item">
             <svg class="contact-icon" width="32" height="32">
-              <use href="../img/icons.svg#email"></use>
+              <use href="/project-teamwork01/assets/icons-BvoaX1Rq.svg#email"></use>
             </svg>
             <p class="contact-link-name">Email</p>
             <a
@@ -642,7 +657,7 @@
           </li>
           <li class="contact-item">
             <svg class="contact-icon" width="32" height="32">
-              <use href="../img/icons.svg#phone"></use>
+              <use href="/project-teamwork01/assets/icons-BvoaX1Rq.svg#phone"></use>
             </svg>
             <p class="contact-link-name">Phone</p>
             <a
@@ -654,7 +669,7 @@
           </li>
           <li class="contact-item">
             <svg class="contact-icon" width="32" height="32">
-              <use href="../img/icons.svg#location"></use>
+              <use href="/project-teamwork01/assets/icons-BvoaX1Rq.svg#location"></use>
             </svg>
             <p class="contact-link-name">Office</p>
             <a
@@ -696,7 +711,7 @@
               placeholder="+12345678900"
               minlength="8"
             />
-            <p>Incorrect name format</p>
+            <p>Incorrect phone format</p>
           </div>
           <div class="form-label-wrapper">
             <label class="contact-form-label" for="user_comment"
@@ -713,7 +728,7 @@
             ></textarea>
           </div>
         </div>
-        <button class="form-btn" type="submit">Submit</button>
+        <button class="btn contact-btn" type="submit">Submit</button>
       </form>
     </div>
   </div>
@@ -723,46 +738,44 @@
 
     <footer class="footer" id="footer">
   <div class="container footer-container">
-    <div class="footer-list-wraper">
-      <div class="footer-logo-social-wraper">
+    <div class="footer-wrapper">
+      <div class="footer-social-wrapper">
         <a href="index.html" class="footer-logo">
-          <svg width="217" height="93" class="footer-logo-icon">
-            <use href="../img/icons.svg#logo"></use>
-          </svg>
+          <img class="footer-logo-icon" src="/project-teamwork01/assets/logo-CGth8Hea.svg" alt="Logo" />
         </a>
         <ul class="footer-social-list">
           <li class="footer-social-item">
             <a href="https://www.facebook.com/" class="footer-social-link">
               <svg class="footer-social-icon" width="32" height="32">
-                <use href="../img/icons.svg#facebook"></use>
+                <use href="/project-teamwork01/assets/icons-BvoaX1Rq.svg#facebook"></use>
               </svg>
             </a>
           </li>
           <li class="footer-social-item">
             <a href="https://www.instagram.com/" class="footer-social-link">
               <svg class="footer-social-icon" width="32" height="32">
-                <use href="../img/icons.svg#instagram"></use>
+                <use href="/project-teamwork01/assets/icons-BvoaX1Rq.svg#instagram"></use>
               </svg>
             </a>
           </li>
           <li class="footer-social-item">
             <a href="https://x.com/" class="footer-social-link">
               <svg class="footer-social-icon" width="32" height="32">
-                <use href="../img/icons.svg#twitter"></use>
+                <use href="/project-teamwork01/assets/icons-BvoaX1Rq.svg#twitter"></use>
               </svg>
             </a>
           </li>
           <li class="footer-social-item">
             <a href="https://www.youtube.com/" class="footer-social-link">
               <svg class="footer-social-icon" width="32" height="32">
-                <use href="../img/icons.svg#linkedIn"></use>
+                <use href="/project-teamwork01/assets/icons-BvoaX1Rq.svg#linkedIn"></use>
               </svg>
             </a>
           </li>
           <li class="footer-social-item">
             <a href="https://www.linkedin.com/" class="footer-social-link">
               <svg class="footer-social-icon" width="32" height="32">
-                <use href="../img/icons.svg#youtube"></use>
+                <use href="/project-teamwork01/assets/icons-BvoaX1Rq.svg#youtube"></use>
               </svg>
             </a>
           </li>
@@ -771,19 +784,29 @@
       <nav class="footer-nav">
         <ul class="footer-nav-list">
           <li class="footer-nav-item">
-            <a href="#" class="footer-nav-link">About us</a>
+            <a href="#" class="footer-nav-link text-decoration-transition"
+              >About us</a
+            >
           </li>
           <li class="footer-nav-item">
-            <a href="#" class="footer-nav-link">Benefits</a>
+            <a href="#" class="footer-nav-link text-decoration-transition"
+              >Benefits</a
+            >
           </li>
           <li class="footer-nav-item">
-            <a href="#" class="footer-nav-link">Gallery</a>
+            <a href="#" class="footer-nav-link text-decoration-transition"
+              >Gallery</a
+            >
           </li>
           <li class="footer-nav-item">
-            <a href="#" class="footer-nav-link">Testimonials</a>
+            <a href="#" class="footer-nav-link text-decoration-transition"
+              >Testimonials</a
+            >
           </li>
           <li class="footer-nav-item">
-            <a href="#" class="footer-nav-link">Contacts</a>
+            <a href="#" class="footer-nav-link text-decoration-transition"
+              >Contacts</a
+            >
           </li>
         </ul>
       </nav>
@@ -797,25 +820,35 @@
 </footer>
 
     <div class="modal" id="modal">
-  <div class="container">
+  <div class="container modal-container">
     <ul class="modal-list">
       <li class="modal-item">
-        <a class="modal-link" href="./about.html">About us</a>
+        <a class="modal-link text-decoration-transition" href="#about"
+          >About us</a
+        >
       </li>
       <li class="modal-item">
-        <a class="modal-link" href="./benefits.html">Benefits</a>
+        <a class="modal-link text-decoration-transition" href="#benefits"
+          >Benefits</a
+        >
       </li>
       <li class="modal-item">
-        <a class="modal-link" href="./gallery.html">Gallery</a>
+        <a class="modal-link text-decoration-transition" href="#gallery"
+          >Gallery</a
+        >
       </li>
       <li class="modal-item">
-        <a class="modal-link" href="./testimonial.html">Testimonials</a>
+        <a class="modal-link text-decoration-transition" href="#testimonial"
+          >Testimonials</a
+        >
       </li>
       <li class="modal-item">
-        <a class="modal-link" href="./contact.html">Contacts</a>
+        <a class="modal-link text-decoration-transition" href="#contact"
+          >Contacts</a
+        >
       </li>
     </ul>
-    <button class="modal-btn">Order Now</button>
+    <button class="btn modal-btn">Order Now</button>
   </div>
 </div>
 
